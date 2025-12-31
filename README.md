@@ -37,7 +37,7 @@
 #keyboard<br>
 #pygetwindow<br>
 
-##INSTALLATION<br>
+## INSTALLATION<br>
 #Clone the repository:<br>
 ```bash
 git clone https://github.com/R81194/discord-text-bot-.git
@@ -46,7 +46,7 @@ cd discord-text-bot-
 #Install dependencies:<br>
 `pip install pyautogui keyboard pygetwindow`
 
-##RUNNING THE SCRIPT<br>
+## RUNNING THE SCRIPT<br>
 #From the project folder, run:<br>
 ```bash
 python bot.py
