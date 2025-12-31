@@ -5,29 +5,29 @@
 #Runs continuously in the background
 #Listens for the keyboard shortcut Ctrl + B
 #When pressed:
-# Detects the currently active window
-# Searches for an open Discord window
-# Brings Discord to the foreground
-# Types "brb" and presses Enter
-# Switches back to the original window
-#Keeps running until manually stopped
+;#Detects the currently active window
+;#Searches for an open Discord window
+;#Brings Discord to the foreground
+;#Types "brb" and presses Enter
+;#Switches back to the original window
+;#Keeps running until manually stopped
 
 ##HOW THE SCRIPT WORKS
 #Keyboard Detection
-# Uses the "keyboard" module to listen for Ctrl + B globally.
-#Window Handling
-# Uses "pygetwindow" to:
-#  Get the currently active window
-#  Find a window with "Discord" in its title
-#  Activate and restore windows
+;#Uses the "keyboard" module to listen for Ctrl + B globally.
+;#Window Handling
+;#Uses "pygetwindow" to:
+; #Get the currently active window
+; #Find a window with "Discord" in its title
+; #Activate and restore windows
 #Key Press Automation
-# Uses "pyautogui" to:
-#  type text
-#  Simulate pressing the Enter key
+;#Uses "pyautogui" to:
+; #type text
+; #Simulate pressing the Enter key
 #Window Restoration
-# Saves the previously active window and restores it after sending the message.
+;#Saves the previously active window and restores it after sending the message.
 
-##REQUIREMENTS
+##REQUIREMENT
 #Python 3.8 or newer
 #Discord must be running and logged in
 #Script must be allowed to capture global keyboard input
@@ -39,14 +39,20 @@
 
 ##INSTALLATION
 #Clone the repository:
+'''bash
 git clone https://github.com/your-username/discord-brb-bot.git
 cd discord-brb-bot
+'''
 #Install dependencies:
+'''bash
 pip install pyautogui keyboard pygetwindow
+'''
 
 ##RUNNING THE SCRIPT
 #From the project folder, run:
+'''bash
 python bot.py
+'''
 
 #Once running, the terminal will show:
 # "Running... Press Ctrl+B"
